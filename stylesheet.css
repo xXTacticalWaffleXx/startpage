@@ -10,17 +10,17 @@ body{
 }
 
 .socials{
-	padding-left: 320px;
 	font-size: 40;
 	flex: 1;
 }
 
 .media {
 	font-size: 40;
-	flex: 2;
+	flex: 1;
 }
 
 .other {
-	flex: 3;
+	padding-right: 10;
+	flex: 1;
 	font-size: 40;
 }
