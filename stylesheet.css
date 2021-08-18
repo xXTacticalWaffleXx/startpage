@@ -1,0 +1,21 @@
+body{
+    font-size: 100px;
+    color: #F7C7B2;
+    padding-top: 100px;
+    background-color: 3C3945;
+}
+
+.parent {
+	display: flex;
+}
+
+.socials{
+	padding-left: 320px;
+	font-size: 40;
+	flex: 1;
+}
+
+.media {
+	font-size: 40;
+	flex: 2;
+}

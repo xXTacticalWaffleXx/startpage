@@ -1,0 +1,55 @@
+<link href="stylesheet.css" rel="stylesheet">
+
+<html>
+
+<center>
+  <div id="txt"></div> 
+
+
+<body onload="startTime()">
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</body>
+
+<br>
+
+</center>
+
+<div class="parent">
+
+	<div class="socials">
+		social: <br>
+		reddit <br>
+		tumblr <br>
+		jul <br>
+	</div>
+
+	<div class="media">
+		media: <br>
+		youtube <br>
+	</div>
+
+</div>
+
+
+</p1>
+
+
+</html>
