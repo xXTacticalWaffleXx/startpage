@@ -19,3 +19,8 @@ body{
 	font-size: 40;
 	flex: 2;
 }
+
+.other {
+	flex: 3;
+	font-size: 40;
+}
