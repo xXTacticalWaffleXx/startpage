@@ -1,28 +1,29 @@
 body{
-    font-size: 100px;
     color: #F7C7B2;
     padding-top: 100px;
-    background-color: 3C3945;
+	font-size: 100px;
+    background-color: #3C3945;
 }
 
 .parent {
 	display: flex;
+	font-size: 40;
 }
 
 .socials{
-	font-size: 40;
 	flex: 1;
+	font-size: 40px;
 }
 
 .media {
-	font-size: 40;
 	flex: 1;
+	font-size: 40px;
 }
 
 .other {
 	padding-right: 10;
 	flex: 1;
-	font-size: 40;
+	font-size: 40px;
 }
 
 a {
