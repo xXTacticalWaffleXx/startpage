@@ -6,6 +6,7 @@ body{
 }
 
 .parent {
+	font-family: Azeret;
 	display: flex;
 	font-size: 40;
 }
@@ -29,4 +30,9 @@ body{
 a {
 	text-decoration: none;
 	color: #F7C7B2;
+}
+
+@font-face {
+  font-family: Azeret;
+  src: url(AzeretMono-Black.ttf);
 }
