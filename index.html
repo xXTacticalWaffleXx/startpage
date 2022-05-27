@@ -21,6 +21,8 @@ contact: luna-aphelion@outlook.com
 
 <body onload="startTime()">
 
+
+<!--time code, dont touch i dont understand it-->
 <script>
 function startTime() {
   const today = new Date();
@@ -29,7 +31,13 @@ function startTime() {
   let s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  if (h > 12){
+	  h = h - 12
+	  document.getElementById('txt').innerHTML =  h + ":" + m + " PM";
+  }else{
+	document.getElementById('txt').innerHTML =  h + ":" + m +" | AM";
+  }
+  
   setTimeout(startTime, 1000);
 }
 
@@ -44,6 +52,17 @@ function checkTime(i) {
 
 <br>
 
+<!--config here-->
+
+<style>
+	body{
+		background-image: url(bg.jpg); /*put a url for the image you want here*/
+		color: #F7C7B2; /*put the colour you want for the text here*/
+
+	}
+</style>
+
+<!--add links here-->
 <div class="parent">
 
 	<div class="socials">
