@@ -15,14 +15,20 @@ contact: luna-aphelion@outlook.com
 
 	<title>home</title>
 
-
-	<div class="weather-container" onload="getWeather()">
+<!--uncomment this and comment the other weather container div to move the weather tracker to the top right -->
+<!--	<div class="weather-container" onload="getWeather()">
 		<div id="weather"></div>
-	</div>
+</div>-->
 
 	<div class="padding">
 <center>
-  <div id="txt"></div> 
+	<div id="txt"></div>
+	<!--if moving the weather container comment this and comment the one above-->
+	<div class="weather-container" onload="getWeather()">
+		<br><div id="weather"></div>
+	</div>
+
+
 
   <body onload="(function() {
 	startTime();
