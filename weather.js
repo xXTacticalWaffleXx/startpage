@@ -7,6 +7,14 @@ const getWeather = async () => {
 	// get the temperature from the json and convert from kelvin to celcius
 	var weatherText = Math.round(json.main.temp - 273.15);
 	var weatherText = weatherText + "°C";
-	
+	// add the characters for the type of weather (clouds and the like)
+	if (json.weather[0].main == "Clouds"){	
+	var weatherText = weatherText + " ☁";
+	}
+	else if (json.weather[0].main == "Rain"){	
+	var weatherText = weatherText + " 🌧";
+	}
+
+	// add weatherText to the html doc
 	weather.innerHTML = weatherText;
 	}
