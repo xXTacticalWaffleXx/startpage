@@ -18,9 +18,6 @@ const getWeather = async () => {
 	var weatherText = weatherText + " ☀";
 	}
 	
-	//add good [time of day] text
-	
-
 	// add weatherText to the html doc
 	weather.innerHTML = weatherText;
 	}
