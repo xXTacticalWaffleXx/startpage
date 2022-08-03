@@ -6,9 +6,9 @@ contact: luna-aphelion@outlook.com
 <!DOCTYPE html>
 
 <head>
-<title>home</title>
-<link href="stylesheet.css" rel="stylesheet">
-<script src="weather.js" defer></script>
+	<title>home</title>
+	<link href="stylesheet.css" rel="stylesheet">
+	<script src="weather.js" defer></script>
 </head>
 
 <html>
@@ -16,49 +16,59 @@ contact: luna-aphelion@outlook.com
 	<title>home</title>
 
 <!--uncomment this and comment the other weather container div to move the weather tracker to the top right -->
-<!--	<div class="weather-container" onload="getWeather()">
-	<a href="https://www.metoffice.gov.uk/weather/forecast/gcqdt4b2x#?date=2022-07-20>	<div id="weather"></div> </a>
-</div>-->
+<!--
+	<div class="weather-container" onload="getWeather()">
+		<a href="https://www.metoffice.gov.uk/weather/forecast/gcqdt4b2x#?date=2022-07-20>	
+			<div id="weather"></div>
+		</a>
+	</div>
+-->
 
-	<div class="padding">
+<div class="padding">
+
 <center>
 	<div id="txt"></div>
+	
 	<!--if moving the weather container comment this and comment the one above-->
+	
 	<div class="weather-container" onload="getWeather()">
-		<a href ="https://www.metoffice.gov.uk/weather/forecast/gcqdt4b2x#?date=2022-07-20"><br><div id="weather"></div> </a>
-	</div>
+		<a href ="https://www.metoffice.gov.uk/weather/forecast/gcqdt4b2x#?date=2022-07-20"><br>
+			<div id="weather"></div>
+		</a>
+</div>
 
 
 
-  <body onload="(function() {
+<body onload="(function() {
 	startTime();
 	getWeather();
-}).call(this)">
+	}).call(this)">
 
 
 <!--time code, dont touch i dont understand it-->
 <script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  if (h > 12){
-	  h = h - 12
-	  document.getElementById('txt').innerHTML =  h + ":" + m + " PM";
-  }else{
-	document.getElementById('txt').innerHTML =  h + ":" + m +" | AM";
-  }
-  
-  setTimeout(startTime, 1000);
-}
+	function startTime() {
+	  const today = new Date();
+	  let h = today.getHours();
+	  let m = today.getMinutes();
+	  let s = today.getSeconds();
+	  m = checkTime(m);
+	  s = checkTime(s);
 
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
+	  if (h > 12){
+		  h = h - 12
+		  document.getElementById('txt').innerHTML =  h + ":" + m + " PM";
+	  }else{
+		  document.getElementById('txt').innerHTML =  h + ":" + m +" | AM";
+	  }
+  
+  	  setTimeout(startTime, 1000);
+  	  }	
+
+	function checkTime(i) {
+	  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	  return i;
+	}
 
 </script>
 
@@ -78,6 +88,7 @@ function checkTime(i) {
 
 <!--add links here-->
 <!--remember to add line breaks when adding new links-->
+
 <div class="parent">
 
 	<div class="socials">
@@ -111,9 +122,5 @@ function checkTime(i) {
 	</div>
 
 </div>
-	</div>
 </center>
-</p1>
-
-
 </html>
