@@ -3,10 +3,16 @@
  contact: luna-aphelion@outlook.com
  */
 
+:root {
+	--text-colour: #F7C7B2;
+}
+
 body{
 	font-size: 100px;
 	background-color: #3C3945;
 	font-family: Montserrat;
+  background-image: url(bg.jpg);
+  color: --text-colour;
 }
 
 .parent {
