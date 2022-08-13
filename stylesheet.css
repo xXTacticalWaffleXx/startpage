@@ -4,15 +4,17 @@
  */
 
 :root {
-	--text-colour: #F7C7B2;
+	--text-colour: #FFFFFF;
 }
 
 body{
 	font-size: 100px;
 	background-color: #3C3945;
 	font-family: Montserrat;
-  background-image: url(bg.jpg);
-  color: --text-colour;
+  background-image: url(0yag8bawnlg91.png);
+  /*~/git_repos/startpage/0yag8bawnlg91.png */
+  color: var(--text-colour);
+	background-size: cover;
 }
 
 .parent {
@@ -39,7 +41,7 @@ body{
 
 a {
 	text-decoration: none;
-	color: #F7C7B2;
+	color: var(--text-colour);
 }
 .padding {
 	padding-top: 100px;
