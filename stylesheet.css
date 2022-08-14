@@ -19,7 +19,7 @@ body{
 .parent {
 	font-family: Montserrat;
 	display: flex;
-	font-size: 40px; /* this changes the size of the links */
+	font-size: 43px; /* this changes the size of the links */
 }
 
 .socials{
