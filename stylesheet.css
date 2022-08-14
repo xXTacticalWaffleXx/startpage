@@ -12,7 +12,6 @@ body{
 	background-color: #3C3945;
 	font-family: Montserrat;
   background-image: url(./bgs/purplenebula.png);
-  /*~/git_repos/startpage/0yag8bawnlg91.png */
   color: var(--text-colour);
 	background-size: cover;
 }
@@ -20,23 +19,19 @@ body{
 .parent {
 	font-family: Montserrat;
 	display: flex;
-	font-size: 40;
+	font-size: 40px;
 }
 
 .socials{
 	flex: 1;
-	font-size: 40px;
 }
 
 .media {
 	flex: 1;
-	font-size: 40px;
 }
 
 .other {
-	padding-right: 10;
 	flex: 1;
-	font-size: 40px;
 }
 
 a {
