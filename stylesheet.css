@@ -4,14 +4,14 @@
  */
 
 :root {
-	--text-colour: #FFFFFF;
+	--text-colour: #D11070;
 }
 
 body{
 	font-size: 100px;
 	background-color: #3C3945;
 	font-family: Montserrat;
-  background-image: url(0yag8bawnlg91.png);
+  background-image: url(./bgs/purplenebula.png);
   /*~/git_repos/startpage/0yag8bawnlg91.png */
   color: var(--text-colour);
 	background-size: cover;
