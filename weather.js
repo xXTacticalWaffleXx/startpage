@@ -1,4 +1,4 @@
-/*Copyright(C) 2022 luna aphelion
+/*Copyright(C) 2022 luna aphelion <luna-aphelion@proton.me>
 
 This program is free software : you can redistribute itand /or modify
 it under the terms of the GNU General Public License as published by
