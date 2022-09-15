@@ -28,7 +28,7 @@ body{
 	font-size: 100px; /* this changes the font size of the clock */
 	background-color: #3C3945;
 	font-family: Montserrat;
-  background-image: url(./bgs/purplecity.png);
+  background-image: url(./bgs/purplecity-low-res.png);
   color: var(--text-colour);
 	background-size: cover;
 }
