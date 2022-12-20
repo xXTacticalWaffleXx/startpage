@@ -27,7 +27,7 @@ const getWeather = async () => {
 	     if (json.weather[0].main == "Clouds"){	
 	var weatherText = weatherText + " ☁";
 	}
-	else if (json.weather[0].main == "Rain"){	
+	else if (json.weather[0].main == "Rain" || json.weather[0] == "Drizzle"){	
 	var weatherText = weatherText + " 🌧";
 	}
 	else if (json.weather[0].main == "Clear"){	
