@@ -20,15 +20,16 @@ along with this program.If not, see < https://www.gnu.org/licenses/>.*/
  */
 
 :root {
-	--text-colour: #D11070;
+	--text-colour: #da75d5; 
+	/*--text-colour: #D11070; /* just having this here for nostalgia reasons */
 	/* --text-colour: #F7C7B2; /* just having this here for nostalgia reasons */
 }
 
 body{
 	font-size: 100px; /* this changes the font size of the clock */
-	background-color: #3C3945;
+	background-color: #111111;
 	font-family: Montserrat;
-  background-image: url(./bgs/purplecity-low-res.png);
+  /* background-image: url(./bgs/purplecity-low-res.png); */
   color: var(--text-colour);
 	background-size: cover;
 }
