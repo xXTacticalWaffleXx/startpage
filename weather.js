@@ -24,17 +24,14 @@ const getWeather = async () => {
 	var weatherText = Math.round(json.main.temp - 273.15);
 	var weatherText = weatherText + "°C";
 	// add the characters for the type of weather (clouds and the like)
-	     if (json.weather[0].main == "Clouds"){	
-	var weatherText = weatherText + " ☁";
+	if (json.weather[0].main == "Clouds" || json.weather[0].main == "Haze"){	
+		var weatherText = weatherText + " ☁";
 	}
 	else if (json.weather[0].main == "Rain" || json.weather[0] == "Drizzle"){	
-	var weatherText = weatherText + " 🌧";
+		var weatherText = weatherText + " 🌧";
 	}
 	else if (json.weather[0].main == "Clear"){	
-	var weatherText = weatherText + " ☀";
-	}
-	else if (json.weather[0].main == "Haze"){
-		var weatherText = weatherText + " ☁";
+		var weatherText = weatherText + " ☀";
 	}
 	
 	// add weatherText to the html doc
