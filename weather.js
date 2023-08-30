@@ -34,7 +34,6 @@ const getWeather = async () => {
 		var weatherText = weatherText + " ☀";
 	}
 
-	//var weatherText = weatherText + "<img src=https://openweathermap.org/img/wn/10d@2x.png>"
 	
 	// add weatherText to the html doc
 	weather.innerHTML = weatherText;
