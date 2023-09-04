@@ -50,7 +50,6 @@ const getWeather = async () => {
 	else if (json.weather[0].main == "Clear"){	
 		var weatherText = weatherText + " ☀";
 	}
-
 	
 	// add weatherText to the html doc
 	weather.innerHTML = weatherText;
