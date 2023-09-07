@@ -51,6 +51,25 @@ const getWeather = async () => {
 		var weatherText = weatherText + " ☀";
 	}
 	
+	const date_format = 3 // 1 = DD-MM-YY 2 = MM-DD-YY other = no date
+	var today = new Date()
+	switch (date_format) {
+		case 1:
+			var dd = String(today.getDate()).padStart(2, '0');
+			var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+			var yyyy = String(today.getFullYear()).replace("20", "");
+			weatherText = weatherText + " " + dd + '/' + mm + '/' + yyyy;
+			break;
+		case 2:
+			var dd = String(today.getDate()).padStart(2, '0');
+			var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+			var yyyy = today.getFullYear().replace(/%20/g, "");
+			weatherText = weatherText + mm + '/' + dd + '/' + yyyy;
+		default:
+			weatherText = weatherText;
+			break;
+	}
+
 	// add weatherText to the html doc
 	weather.innerHTML = weatherText;
 	}
