@@ -51,7 +51,7 @@ const getWeather = async () => {
 		var weatherText = weatherText + " ☀";
 	}
 	
-	const date_format = 3 // 1 = DD-MM-YY 2 = MM-DD-YY other = no date
+	const date_format = 1 // 1 = DD-MM-YY 2 = MM-DD-YY other = no date
 	var today = new Date()
 	switch (date_format) {
 		case 1:
