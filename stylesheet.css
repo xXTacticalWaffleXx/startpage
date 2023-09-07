@@ -35,6 +35,7 @@ body{
 }
 
 .parent {
+	/*font-family: Montserrat;*/
 	font-family: mono;
 	display: flex;
 	font-size: 40px; /* this changes the size of the links */
@@ -70,5 +71,10 @@ a {
 
 @font-face {
   font-family: Montserrat;
-  src: url(Montserrat-Light.ttf);
+  src: url(./fonts/Montserrat-Light.ttf);
+}
+
+@font-face{
+	font-family: mono;
+	src: url(./IBMPlexMono-ExtraLight.ttf)
 }
