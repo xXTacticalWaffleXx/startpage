@@ -28,7 +28,7 @@ along with this program.If not, see < https://www.gnu.org/licenses/>.*/
 body{
 	font-size: 100px; /* this changes the font size of the clock */
 	background-color: #111111;
-	font-family: Mono; /* Montserrat or mono*/
+	font-family: mono; /* Montserrat or mono*/
   /* background-image: url(./bgs/purplecity-low-res.png); */
   color: var(--text-colour);
 	background-size: cover;
@@ -75,5 +75,5 @@ a {
 
 @font-face{
 	font-family: mono;
-	src: url(./fonts/IBMPlexMono-ExtraLight.ttf)
+	src: url(./fonts/IBMPlexMono-ExtraLight.ttf);
 }

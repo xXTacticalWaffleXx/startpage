@@ -21,7 +21,9 @@ function GetFahrenheitFromKelvin(kelvin) {
   celcius = kelvin - 273.15 // most fahrenheit conversion formulas have you convert to celcius first
   return Math.round(celcius * 1.8 + 32)
 }
+
 const weather = document.querySelector('#weather');
+const time = document.querySelector('#time');
 
 const getWeather = async () => {
 	//get json data from the api
@@ -64,12 +66,10 @@ const getWeather = async () => {
 			var dd = String(today.getDate()).padStart(2, '0');
 			var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 			var yyyy = today.getFullYear().replace(/%20/g, "");
-			weatherText = weatherText + mm + '/' + dd + '/' + yyyy;
+			weatherText = weatherText + " " + mm + '/' + dd + '/' + yyyy;
 		default:
-			weatherText = weatherText;
 			break;
 	}
-
 	// add weatherText to the html doc
 	weather.innerHTML = weatherText;
-	}
+}
