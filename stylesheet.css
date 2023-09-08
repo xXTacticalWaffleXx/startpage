@@ -15,7 +15,7 @@
 	/* --text-colour: #F7C7B2; /* just having this here for nostalgia reasons */
 }
 
-body{
+body {
 	background-color: #111111;
 	font-family: mono; /* Montserrat or mono*/
 	color: var(--text-colour);
