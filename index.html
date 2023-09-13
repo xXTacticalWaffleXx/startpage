@@ -1,6 +1,6 @@
 <!--Copyright(C) 2022 luna aphelion <luna-aphelion@proton.me>
 
-This program is free software : you can redistribute itand /or modify
+This program is free software : you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 #the Free Software Foundation, either version 3 of the License, or
 at your option) any later version.
@@ -20,114 +20,95 @@ contact: luna-aphelion@proton.me
 -->
 
 <!DOCTYPE html>
-
-<head>
-	<title>home</title>
-	<link href="stylesheet.css" rel="stylesheet">
-	<script src="./weather.js" defer></script>
-</head>
-
+<meta charset="UTF-8">
 <html>
+	<head>
+		<title>home</title>
+		<link href="stylesheet.css" rel="stylesheet">
+		<script src="js/weather.js" defer></script>
+		<script src="js/time.js" defer></script>
+		<script src="js/main.js" defer></script>
+	</head>
 
-	<title>home</title>
+	<body>
+		<div class="time-date-weather-container">
+			<div id="clock"></div>
+			
+			<div class="weather-date-container">
+				<a href="https://www.metoffice.gov.uk/weather/forecast/gcqdt4b2x#?date=2022-07-20" id="weather"></a>
+				<span id="date"></span>
+			</div>
+		</div>
+		
+		<div class="links-container">
+			<div class="link-column socials">
+				<h2 class="link-column-title">social:</h2>
+				<ul class="link-list">
+					<li>
+						<a href="./folders/reddit.html">reddit</a>
+					</li>
+					<li>
+						<a href="https://tumblr.com">tumblr</a>
+					</li>
+					<li>
+						<a href="./folders/email.html">email</a>
+					</li>
+					<li>
+						<a href="./folders/forums.html">forums</a>
+					</li>
+				</ul>
+			</div>
 
-<!--uncomment this and comment the other weather container div to move the weather tracker to the top right -->
-<!--
-	<div class="weather-container" onload="getWeather()">
-		<a href="https://www.metoffice.gov.uk/weather/forecast/gcqdt4b2x#?date=2022-07-20>	
-			<div id="weather"></div>
-		</a>
-	</div>
--->
+			<div class="link-column media">
+				<h2 class="link-column-title">media:</h2>
+				<ul class="link-list">
+					<li>
+						<a href="https://youtube.com">youtube</a>
+					</li>
+					<li>
+						<a href="https://music.youtube.com/library">youtube music</a>
+					</li>
+					<li>
+						<a href="https://www.netflix.com">netflix</a>
+					</li>
+					<li>
+						<a href="https://www.patreon.com/">patreon</a>
+					</li>
+					<li>
+						<a href="https://www.bbc.co.uk/iplayer">BBC iplayer</a>
+					</li>
+					<li>
+						<a href="https://app.plex.tv">plex</a>
+					</li>
+				</ul>
+			</div>
 
-<div class="padding">
-
-<center>
-	<div id="txt"></div>
-	
-	<!--if moving the weather container comment this and comment the one above-->
-	
-	<div class="weather-container" onload="getWeather">
-		<a href ="https://www.metoffice.gov.uk/weather/forecast/gcqdt4b2x#?date=2022-07-20"><br>
-			<span id="weather"></span>
-		</a>
-</div>
-
-
-
-<body onload="(function() {
-	startTime();
-	getWeather();
-	}).call(this)">
-
-
-<!--time code, dont touch i dont understand it-->
-<script>
-	function startTime() {
-	  const today = new Date();
-	  let h = today.getHours();
-	  let m = today.getMinutes();
-	  let s = today.getSeconds();
-	  m = checkTime(m);
-	  s = checkTime(s);
-
-	  if (h > 12){
-		  h = h - 12
-		  document.getElementById('txt').innerHTML =  h + ":" + m + " PM";
-	  }else{
-		  document.getElementById('txt').innerHTML =  h + ":" + m +" | AM";
-	  }
-  
-  	  setTimeout(startTime, 1000);
-  	  }	
-
-	function checkTime(i) {
-	  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-	  return i;
-	}
-
-</script>
-
-</body>
-
-<br>
-
-<!--config here-->
-
-<!--add links here-->
-<!--remember to add line breaks when adding new links-->
-
-<div class="parent">
-
-	<div class="socials">
-		social: <br>
-		<a href="./folders/reddit.html">reddit</a> <br>
-		<a href="https://tumblr.com">tumblr</a> <br>
-		<a href="./folders/email.html">email</a> <br>
-		<a href="./folders/forums.html">forums</a> <br>
-	</div>
-
-	<div class="media">
-		media: <br>
-		<a href="https://youtube.com">youtube</a> <br>
-		<a href="https://music.youtube.com/library">youtube music</a> <br>
-		<a href="https://www.netflix.com">netflix</a> <br>
-		<a href="https://www.patreon.com/">patreon</a> <br>
-		<a href="https://www.bbc.co.uk/iplayer">BBC iplayer</a> <br>
-		<a href="https://app.plex.tv">plex</a> <br>
-	</div>
-
-	<div class="other">
-		other: <br>
-		<a href="https://github.com">github</a><br>
-		<a href="https://waffles-cosmic-void.neocities.org/">waffles-cosmic-void</a> <br>
-		<a href="https://tryhackme.com">try hack me</a> <br>
-		<a href="./folders/art.html"> art folder </a> <br>
-		<a href="https://wiki.hypixel.net">hypixel wiki</a> <br>
-		<a href="https://wiki.archlinux.org">Arch Wiki</a> <br>
-		<a href="https://aur.archlinux.org/"> AUR </a> <br>
-	</div>
-
-</div>
-</center>
+			<div class="link-column other">
+				<h2 class="link-column-title">other:</h2>
+				<ul class="link-list">
+					<li>
+						<a href="https://github.com">github</a>
+					</li>
+					<li>
+						<a href="https://waffles-cosmic-void.neocities.org/">waffles-cosmic-void</a>
+					</li>
+					<li>
+						<a href="https://tryhackme.com">try hack me</a>
+					</li>
+					<li>
+						<a href="./folders/art.html">art folder</a>
+					</li>
+					<li>
+						<a href="https://wiki.hypixel.net">hypixel wiki</a>
+					</li>
+					<li>
+						<a href="https://wiki.archlinux.org">Arch Wiki</a>
+					</li>
+					<li>
+						<a href="https://aur.archlinux.org/">AUR</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>

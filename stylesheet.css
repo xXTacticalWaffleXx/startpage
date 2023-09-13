@@ -1,79 +1,81 @@
-/*Copyright(C) 2022 luna aphelion <luna-aphelion@proton.me>
-
-This program is free software : you can redistribute itand /or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.If not, see < https://www.gnu.org/licenses/>.*/
-
-
-/*
- author: luna aphelion
- contact: luna-aphelion@proton.me
- */
-
-:root {
-	--text-colour: #da75d5; 
-	/*--text-colour: #D11070; /* just having this here for nostalgia reasons */
-	/* --text-colour: #F7C7B2; /* just having this here for nostalgia reasons */
-}
-
-body{
-	font-size: 100px; /* this changes the font size of the clock */
-	background-color: #111111;
-	font-family: mono; /* Montserrat or mono*/
-  /* background-image: url(./bgs/purplecity-low-res.png); */
-  color: var(--text-colour);
-	background-size: cover;
-}
-
-.parent {
-	font-family: mono; /* Montserrat or mono*/
-	display: flex;
-	font-size: 40px; /* this changes the size of the links */
-}
-
-.socials{
-	flex: 1;
-}
-
-.media {
-	flex: 1;
-}
-
-.other {
-	flex: 1;
-}
-
-a {
-	text-decoration: none;
-	color: var(--text-colour);
-}
-.padding {
-	padding-top: 100px;
-}
-.weather {
-	font-size: 20px; /* this changes the size of the weather widget */
-	height: 20px;
-}
-.weather-container{
-	font-size: 40px;
-	height: 20px;
-}
-
 @font-face {
-  font-family: Montserrat;
-  src: url(./fonts/Montserrat-Light.ttf);
+	font-family: Montserrat;
+	src: url(./fonts/Montserrat-Light.ttf);
 }
 
 @font-face{
 	font-family: mono;
 	src: url(./fonts/IBMPlexMono-ExtraLight.ttf);
+}
+
+:root {
+	--text-colour: #da75d5; 
+	/*--text-colour: #D11070; /* just having this here for nostalgia reasons */
+	--text-alt-colour: #D11070;
+	/* --text-colour: #F7C7B2; /* just having this here for nostalgia reasons */
+}
+
+body {
+	background-color: #111111;
+	font-family: mono; /* Montserrat or mono*/
+	color: var(--text-colour);
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-colour);
+	transition: 0.25s;
+}
+
+a:hover, a:active {
+	color: var(--text-alt-colour);
+}
+
+h2 {
+	margin: 0.5rem 0;
+}
+
+.time-date-weather-container {
+	width: fit-content;
+	margin: 4.5rem auto;
+}
+
+#clock {
+	width: 100%;
+	font-size: 8rem;
+}
+
+.weather-date-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	font-size: 2rem;
+}
+
+.links-container {
+	padding: 0 6rem;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	font-size: 40px;
+}
+
+.link-column {
+	flex: 1;
+}
+
+.link-column-title {
+	font-family: Montserrat;
+}
+
+.link-list {
+	margin: 0;
+}
+
+.weather-date-container {
+	font-size: 2.5rem;
 }
