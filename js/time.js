@@ -1,5 +1,6 @@
 function startTime() {
 	const now = new Date();
+	let suffix = "AM"
 	let h = now.getHours();
 	let m = now.getMinutes();
 	let s = now.getSeconds();
@@ -8,9 +9,10 @@ function startTime() {
 
 	if (h > 12) {
 		h -= 12
+		suffix = "PM"
 	}
 
-	document.getElementById('clock').innerHTML = `${h}:${m}|AM`;
+	document.getElementById('clock').innerHTML = `${h}:${m}|${suffix}`;
 
 	setTimeout(startTime, 1000);
 }
